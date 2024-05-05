@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+li {
+  display: inline; 
+  margin-right: 20px; 
+}
+
+li a {
+  display: inline-block;
+  color: rgb(87, 59, 22);
+  text-align: center;
+  padding: 10px 10px; 
+  text-decoration: none;
+}
+
+li a:hover {
+  color:  rgb(226, 192, 94); 
+}
+
+#beranda {
+  padding: 15rem 0;
+  background-color: rgb(226, 192, 94);
+  gap: 3rem;
+}
+
+#beranda h1 {
+  text-align: center;
+  color: rgb(87, 59, 22);
+  margin-bottom: 2rem; 
+  animation: fadeIn 1.5s ease-in-out; 
+}
+
+#beranda p {
+  text-align: center;
+  letter-spacing: .2rem;
+  color: rgb(238, 229, 212);
+  margin-bottom: 3rem; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#profil {
+  padding: 13rem 2rem;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  gap: 3rem; 
+}
+
+
+#profil img {
+  width: 500px; 
+  border-radius: 10px;
+  box-shadow: rgb(23, 19, 16) 0px 5px 10px;
+}
+
+#profil .button-column {
+  display: flex; 
+  flex-direction: column;
+}
+
+.profile-text {
+  max-width: 500px; 
+}
+
+.profile-text p {
+  margin-bottom: 10px; 
+}
+
+button {
+  background: rgb(23, 19, 16);
+  color:  rgb(238, 229, 212);
+  padding: .5rem 1rem; 
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: none; 
+  outline: none; 
+}
+
+button:hover {
+  background-color: rgb(226, 192, 94);
+}
+
+button::before {
+  content: "🐑 Click me if you're feeling sheepish! 🐑";
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: rgb(23, 19, 16);
+  background-color: rgb(226, 192, 94);
+}
